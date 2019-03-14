@@ -1,0 +1,104 @@
+/* Fav list menu */
+.likes-menu .navbar-dropdown .navbar-item {
+  padding: 0.75rem 3rem 0.75rem 1rem;
+}
+
+.likes-menu figure.image {
+  display: flex;
+  align-items: center;
+}
+
+.likes-menu .navbar-item img {
+  max-height: 2rem;
+}
+
+.likes-menu .image figcaption {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.75rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Shopping list menu */
+.shopping-list {
+  width: 100%;
+  max-width: 15rem;
+}
+
+.shopping-list-menu .field.is-grouped {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.shopping-list-menu li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  white-space: normal;
+  justify-content: space-between;
+}
+
+.shopping-list-menu li:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.shopping-list-delete {
+  position: absolute;
+  right: 0;
+  box-shadow: -0.5rem 0 1rem 0.5rem #fff;
+  transform: translateX(1rem);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.shopping-list-menu li:hover .shopping-list-delete {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Page content */
+@media screen and (min-width: 769px), print {
+  .pagination {
+    justify-content: flex-end;
+  }
+}
+
+/* Modal card of recipe */
+.modal-card-title {
+  flex-shrink: 1;
+  line-height: 1.2;
+}
+
+.modal-card-body .image img {
+  object-fit: cover;
+}
+
+.modal-card-foot .field {
+  margin: 0;
+}
+
+.modal-card-foot {
+  justify-content: space-between;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ingredients-list li {
+  flex: 0 0 50%;
+}
+
+/* Footer */
+.footer {
+  padding: 3rem 1.5rem;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grab a Bite!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-item title is-4">
+            <i class="fas fa-drumstick-bite"></i>&nbsp;Grab a Bite
+          </span>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable likes-menu">
+            <a class="navbar-link is-arrowless">
+              <i class="far fa-heart"></i>&nbsp;<span class="liked-count"
+                >0</span
+              >&nbsp;liked recipes
+            </a>
+
+            <div class="navbar-dropdown is-right likes-list">
+              <!-- <a class="navbar-item">
+                <figure class="image">
+                  <img
+                    class="is-rounded"
+                    src="https://bulma.io/images/placeholders/128x128.png"
+                  />
+                  <figcaption>
+                    <span class="title is-6">John Smith John Smith</span>
+                    <span class="subtitle is-7">Johnsmith</span>
+                  </figcaption>
+                </figure>
+              </a> -->
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable shopping-list-menu">
+            <a class="navbar-link is-arrowless">
+              <i class="far fa-list-alt"></i>&nbsp; Shopping list
+            </a>
+            <div class="navbar-dropdown is-right">
+              <div class="navbar-item">
+                <ul class="shopping-list">
+                  <!-- <li class="shopping-list-item" data-itemid="1">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <button
+                      class="button is-danger is-small shopping-list-delete"
+                    >
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </li> -->
+                </ul>
+              </div>
+              <hr class="navbar-divider" />
+              <div class="navbar-item">
+                <div class="field is-grouped shopping-btns">
+                  <p class="control">
+                    <button class="button copy is-info" disabled>
+                      <i class="far fa-copy"></i>&nbsp; Copy
+                    </button>
+                  </p>
+                  <p class="control">
+                    <button class="button clear is-danger" disabled>
+                      <i class="fas fa-eraser"></i>&nbsp; Clear
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Are You Hungry?
+          </h1>
+          <h2 class="subtitle">
+            Search over 1.7+ million recipes!
+          </h2>
+          <form class="search">
+            <div class="field has-addons has-addons-centered">
+              <div class="control">
+                <input
+                  class="input is-large search-field"
+                  type="text"
+                  placeholder="e.g. pizza"
+                />
+              </div>
+              <div class="control">
+                <button
+                  type="submit"
+                  class="button is-primary is-large search-btn"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section results">
+      <div class="container">
+        <div class="columns is-multiline result-list">
+          <!-- <div class="column is-one-quarter">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="https://bulma.io/images/placeholders/1280x960.png"
+                    alt="Placeholder image"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-5">John Smith</p>
+                    <p class="subtitle is-6">@johnsmith</p>
+                  </div>
+                </div>
+              </div>
+              <footer class="card-footer">
+                <a href="#" class="card-footer-item"
+                  >More details &nbsp; <i class="fas fa-arrow-right"></i
+                ></a>
+              </footer>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="container">
+        <br />
+        <nav class="pagination" role="navigation" aria-label="pagination">
+          <!-- <a class="page-btn pagination-previous" disabled>Previous</a>
+          <a class="page-btn pagination-next">Next</a> -->
+        </nav>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong
+            ><i class="fas fa-drumstick-bite"></i>&nbsp;Grab a Bite</strong
+          >
+          by
+          <a href="http://piotr-szponar.pl/" target="_blank">Piotr Szponar</a>
+          <br />Powered by
+          <a href="https://www.edamam.com/" target="_blank">Edamam.com</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- <div class="modal recipe is-active">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <div class="modal-card-title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+            tempore modi ea, hic vel ullam?
+          </div>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <figure class="image is-3by1">
+            <img
+              src="https://bulma.io/images/placeholders/128x128.png"
+              class="modal-card-image"
+            />
+          </figure>
+          <br />
+          <div class="content">
+            <div class="columns">
+              <div class="column">
+                <i class="fas fa-stopwatch"></i> &nbsp;<span class="recipe-time"
+                  >0</span
+                >
+                minutes
+              </div>
+              <div class="column">
+                <i class="fas fa-cheese"></i> &nbsp;<span
+                  class="recipe-servings"
+                  >0</span
+                >
+                servings
+                <div class="buttons has-addons is-pulled-right ">
+                  <span class="button is-small btn-increase"
+                    ><i class="fas fa-plus"></i
+                  ></span>
+                  <span class="button is-small btn-decrease"
+                    ><i class="fas fa-minus"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="column has-text-right">
+                <button class="button is-info is-small recipe-love">
+                  <i class="fas fa-heart"></i>&nbsp;Add to favorites
+                </button>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <table class="table is-striped is-hoverable is-fullwidth">
+                  <thead>
+                    <tr>
+                      <th>Nutrition facts</th>
+                      <th>Whole meal</th>
+                      <th>One serving</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>Calories</th>
+                      <td>3200 g</td>
+                      <td>200 g</td>
+                    </tr>
+                    <tr>
+                      <th>Fat</th>
+                      <td>3200 g</td>
+                      <td>200 g</td>
+                    </tr>
+                    <tr>
+                      <th>Carbohydrate</th>
+                      <td>3200 g</td>
+                      <td>200 g</td>
+                    </tr>
+                    <tr>
+                      <th>Protein</th>
+                      <td>3200 g</td>
+                      <td>200 g</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <h3><i class="fas fa-puzzle-piece"></i> Ingredients</h3>
+                <ul class="ingredients-list">
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <div class="field is-grouped">
+            <p class="control">
+              <button class="button is-primary">
+                <i class="fas fa-external-link-alt"></i> &nbsp; Show directions
+              </button>
+            </p>
+            <p class="control">
+              <button class="button recipe-btn-add">
+                <i class="fas fa-list-ul"></i> &nbsp; Add to shopping list
+              </button>
+            </p>
+          </div>
+          <div class="has-text-right is-size-7">
+            by Lorem Ipsum Recipes
+          </div>
+        </footer>
+      </div>
+    </div> -->
+  </body>
+</html>

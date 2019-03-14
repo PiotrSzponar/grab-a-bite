@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grab a Bite!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+      integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-item title is-4">
+            <i class="fas fa-utensils"></i> &nbsp; Grab a Bite
+          </span>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable likes-menu">
+            <a class="navbar-link is-arrowless">
+              <i class="far fa-heart"></i>&nbsp;<span class="liked-count"
+                >0</span
+              >&nbsp;liked recipes
+            </a>
+
+            <div class="navbar-dropdown is-right likes-list"></div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable shopping-list-menu">
+            <a class="navbar-link is-arrowless">
+              <i class="far fa-list-alt"></i>&nbsp; Shopping list
+            </a>
+            <div class="navbar-dropdown is-right">
+              <div class="navbar-item">
+                <ul class="shopping-list"></ul>
+              </div>
+              <hr class="navbar-divider" />
+              <div class="navbar-item">
+                <div class="field is-grouped shopping-btns">
+                  <p class="control">
+                    <button class="button copy is-info" disabled>
+                      <i class="far fa-copy"></i>&nbsp; Copy
+                    </button>
+                  </p>
+                  <p class="control">
+                    <button class="button clear is-danger" disabled>
+                      <i class="fas fa-eraser"></i>&nbsp; Clear
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero is-info is-bold is-fullheight-with-navbar">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Are You Hungry?
+          </h1>
+          <h2 class="subtitle">
+            Search over 1.7+ million recipes!
+          </h2>
+          <form class="search">
+            <div class="field has-addons has-addons-centered">
+              <div class="control">
+                <input
+                  class="input is-large search-field"
+                  type="text"
+                  placeholder="e.g. pizza"
+                />
+              </div>
+              <div class="control">
+                <button
+                  type="submit"
+                  class="button is-primary is-large search-btn"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section results">
+      <div class="container">
+        <div class="columns is-multiline results-list"></div>
+      </div>
+      <div class="container">
+        <br />
+        <nav class="pagination" role="navigation" aria-label="pagination"></nav>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong><i class="fas fa-utensils"></i>&nbsp;Grab a Bite</strong>
+          by
+          <a href="http://piotr-szponar.pl/" target="_blank">Piotr Szponar</a>
+          <br />Powered by
+          <a href="https://www.edamam.com/" target="_blank">Edamam.com</a>
+        </p>
+      </div>
+    </footer>
+
+    <div class="modal recipe">
+      <div class="modal-background"></div>
+      <div class="modal-card recipe-card"></div>
+    </div>
+  <script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
